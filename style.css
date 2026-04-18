@@ -344,22 +344,30 @@ ul {
     .nav-menu {
         display: none;
         flex-direction: column;
-        gap: 0;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background: white;
-        box-shadow: var(--shadow);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
     .nav-menu.active {
         display: flex;
     }
     
+    .nav-menu li {
+        border-bottom: 1px solid #eee;
+    }
+    
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+    
     .nav-menu a {
-        padding: 15px 20px;
-        border-radius: 0;
+        display: block;
+        padding: 16px 20px;
+        font-size: 1rem;
     }
     
     .main-container {
